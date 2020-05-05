@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IDropHandler
+public class DragNumbers : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IDropHandler
 {
 	[SerializeField]
 	private Canvas canvas;
@@ -15,10 +15,8 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
 	public bool droppedOnDestination = false;
 
-	public bool draggable = true;
-
 	[SerializeField]
-	public bool correctAnswer;
+	public int number;
 
 	private void Start()
 	{
@@ -35,38 +33,32 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 	{
 		droppedOnDestination = false;
 		Debug.Log("begin drag");
-		if (draggable)
-		{
-			canvasGroup.alpha = .8f;
-			canvasGroup.blocksRaycasts = false;
-		}
-
+		canvasGroup.alpha = .8f;
+		canvasGroup.blocksRaycasts = false;
 	}
 
 	public void OnDrag(PointerEventData eventData)
 	{
-		if (draggable)
-		{
-			rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
-		}
+		rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
 	}
 
 	public void OnEndDrag(PointerEventData eventData)
 	{
-		if (draggable)
+		StartCoroutine(Wait());
+
+		if (droppedOnDestination == false)
 		{
-			StartCoroutine(Wait());
-
-			if (droppedOnDestination == false)
-			{
-				rectTransform.position = startPosition;
-			}
-
-			Debug.Log("end drag");
-			canvasGroup.blocksRaycasts = true;
-			canvasGroup.alpha = 1f;
+			Debug.Log("false");
+			rectTransform.position = startPosition;
+		} else
+		{
+			Debug.Log("destroy");
+			Destroy(this.gameObject);
 		}
 
+		Debug.Log("end drag");
+		canvasGroup.blocksRaycasts = true;
+		canvasGroup.alpha = 1f;
 	}
 
 	public void OnPointerDown(PointerEventData eventData)
