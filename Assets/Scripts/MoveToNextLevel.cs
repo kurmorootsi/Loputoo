@@ -8,8 +8,6 @@ public class MoveToNextLevel : MonoBehaviour
 	public int nextSceneLoad;
 	public int currentScene;
 
-	[SerializeField]
-	public int givenStars;
     
     void Start()
     {
@@ -20,10 +18,6 @@ public class MoveToNextLevel : MonoBehaviour
 
 	public void loadNextLevel()
 	{
-		PlayerPrefs.SetInt("level_"+currentScene, givenStars);
-
-		Debug.Log("pref set-level_" + currentScene + " stars-" + givenStars);
-
 		SceneManager.LoadScene(nextSceneLoad);
 
 		if (nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
