@@ -9,33 +9,39 @@ public class DropDestination : MonoBehaviour, IDropHandler
 	private int items = 0;
 
 	[SerializeField]
-	private Image teacher;
+	private GameObject tyhi_koht;
+
+	[SerializeField]
+	private GameObject klass_koht;
+
+	[SerializeField]
+	private Image dropped_class_image;
+
+	[SerializeField]
+	private GameObject dropped_class;
 
 	[SerializeField]
 	public LevelManagerObject LevelManagerObject;
+
+	public bool is_tyhi = true;
 
 	public void OnDrop(PointerEventData eventData)
 	{
 		if (eventData.pointerDrag != null)
 		{
-			if (eventData.pointerDrag.GetComponent<DragAndDrop>().correctAnswer)
+			if (eventData.pointerDrag.GetComponent<DragAndDrop>().correctAnswer && is_tyhi)
 			{
+				is_tyhi = false;
 				eventData.pointerDrag.GetComponent<DragAndDrop>().droppedOnDestination = true;
 				eventData.pointerDrag.GetComponent<DragAndDrop>().draggable = false;
 
-				Vector2 position = GetComponent<RectTransform>().anchoredPosition;
+				dropped_class = eventData.pointerDrag.GetComponent<DragAndDrop>().gameObject;
+				dropped_class_image.gameObject.SetActive(true);
+				dropped_class_image.sprite = eventData.pointerDrag.GetComponent<DragAndDrop>().sprite;
 
-				position.x -= 30;
-				position.y = 100 - (items * 40);
-				teacher.fillAmount += .25f;
-				items++;
-
-				eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = position;
-
-				if (items == 4)
-				{
-					finishLevel();
-				}
+				tyhi_koht.SetActive(false);
+				klass_koht.SetActive(true);
+				dropped_class.SetActive(false);
 			}
 		}
 	}
@@ -51,5 +57,9 @@ public class DropDestination : MonoBehaviour, IDropHandler
 		LevelManagerObject.finishLevel();
 	}
 
+	private void Start()
+	{
+		
+	}
 
 }
