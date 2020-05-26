@@ -18,11 +18,32 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
 	public bool draggable = true;
 
+	public bool ulemActive = false;
+
+	[SerializeField]
+	public bool isPara;
+
 	[SerializeField]
 	public bool correctAnswer;
 
 	[SerializeField]
+	public bool isObject;
+
+	[SerializeField]
+	public bool canUlem;
+
+	[SerializeField]
+	public string classType = "";
+
+	[SerializeField]
 	public Sprite sprite;
+
+	[SerializeField]
+	public Transform itemsParent;
+
+	Inventory inventory;
+
+	InventorySlot[] slots;
 
 	private void Start()
 	{
@@ -38,7 +59,6 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 	public void OnBeginDrag(PointerEventData eventData)
 	{
 		droppedOnDestination = false;
-		Debug.Log("begin drag");
 		if (draggable)
 		{
 			canvasGroup.alpha = .8f;
@@ -66,7 +86,6 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 				rectTransform.position = startPosition;
 			}
 
-			Debug.Log("end drag");
 			canvasGroup.blocksRaycasts = true;
 			canvasGroup.alpha = 1f;
 		}
@@ -75,12 +94,10 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
 	public void OnPointerDown(PointerEventData eventData)
 	{
-		Debug.Log("pointer down");
 	}
 
 	public void OnDrop(PointerEventData eventData)
 	{
-		Debug.Log("drop");
 	}
 
 	IEnumerator Wait()

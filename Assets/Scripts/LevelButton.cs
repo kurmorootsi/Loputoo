@@ -21,7 +21,10 @@ public class LevelButton : MonoBehaviour
 
 		Debug.Log("stars given-" + givenStars);
 
-
+		if (givenStars < 1)
+		{
+			return;
+		}
 		for (int i = 0; i <= givenStars-1; i++)
 		{
 			lvlButtons[i].SetActive(true);

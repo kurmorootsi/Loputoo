@@ -1,0 +1,50 @@
+play=Mängi
+info=Info
+back=Tagasi
+about_title=OOP Grupeerimise mäng
+about_text_1=Tegemist on Objekt orienteeritud programmeerimise tõsimänguga.
+about_text_2=Mängus peab mängija aitama läbi viia koolipäeva ning grupeerima olemasolevad OOP objektid õigete OOP klasside alla.
+about_text_3=Tõsimäng valmis Kurmo Andres Rootsi bakalaureusetöö vältel.
+level_title=Levelid
+create_object=LOO OBJEKT
+show_class=KLASSI INFO
+empty_spot=TÜHI KOHT
+ready=VALMIS
+menu=MENÜÜ
+edasi=EDASI
+level_1_title=OOP Klass ja objekt
+level_1_info_1=Objekt orienteeritud programmeerimine on disainitud objektidee ümber. Objekte saab luua kui sul on olemas selle objekti OOP Klass, mis on objekti loomise plaan. Selles mängus meil on objektid ja klassid. Näiteks "Õppematerjal" klass on lihtsalt kõikide õppematerjalide objektide struktuur ning objekte ise ei pea olemas olema. Kui me loome objekti, siis tekib meil reaalne õppematerjali ese, me saame ise määrata mis aine oma see on ja mitu lehekülge sellel on.
+level_1_info_2=Tiri OOP klassid tühjadele kohtadele, peale seda grupeeri tirides olemasolevad objektid õigete klasside külge. Loo puuduvad objektid ise.
+
+level_2_title=OOP ülemklass ja alamklass
+level_2_info_1=Tavalisel Klassil saab olla ka Ülemklass, millest alamklass saab ülemklassi omadused endale. Näiteks "Õpetaja" alamklassile saab lisada "Inimene" ülemklassi, mis lisab lisaks algsetele omadustele uued "Inimene" klassi omadused "nimi", "sugu" ja "vanus". Sarnaselt saab lisada "Inimene" ülemklassi ka "Õpilane" klassile. Ülemklassiga objekt on kuvatud: alamklass : ülemklass;
+level_2_info_2=Grupeeri olemasolevad klassid ja objektid. Lisa uus ülemklass "Inimene" soovitud klassile ja loo puuduvad objektid.
+
+level_3_title=OOP parameetrid
+level_3_info_1=Klassid koosnevad erinevatest omadustest. Omadused on "Õppematerjal" klassil näiteks lehekülgede arv. Arvu me teadma klassi puhul ei pea, sest klass ainult ütleb, et selline omadus eksisteerib, objekti loomisel peame lehekülgede arvu teadma ja määrama.
+level_3_info_2=Koolihoovi on lisatud omaduste parameetrid, uuri alumisel Klassi menüül "Klassi info"st, mis omadustest iga klass koosneb, tõsta olemasolevad parameetrid õigesti objektide külge menüüs.
+
+intro_title=Koolihoovis on tekkinud segadus.
+intro_sisu=Koolihoovi on laiali paiskunud erinevad kooliks vajalikud õpilased, õpetajad, klassiruumid ja õppematerjalid. Neil kõigil on oma Klass ja Objekt. Klass on sulle juhiseks, et luua erinevaid objekte. Igal levelil on ette antud mitu vajalikku objekti on vaja. Tiri olemasolevad Klassid tühjale kohale ning hakka grupeerima või looma objekte, pane tähele, et igat objekti saad luua kaks tükki. Grupeerimiseks tiri olemasolevad objektid nende õigete klasside kohtadele. Koolikell heliseb kahe minuti pärast. Sa saad selle infotabeli uuesti avada vajutades "i" nuppu aja kõrval.
+intro_0=Inimene ülemklass
+intro_1=Klassiruumi klass ja objekt
+intro_2=Õppematerjali klass ja objekt
+intro_3=Õpilase klass ja objekt
+intro_4=Õpetaja klass ja objekt
+
+for_school=Koolipäevaks on vaja
+student=Õpilane
+student_human=Õpilane : Inimene
+teacher=Õpetaja
+teacher_human=Õpetaja : Inimene
+classroom=Klassiruum
+material=Materjal
+object=OBJEKT
+CLASS=KLASS
+parent=ÜLEMKLASS
+wall_color=SEINA VÄRV
+parameeter=PARAMEETER
+sinine=SININE
+pages=LEHEKÜLGI
+material_length=MATERJALI PIKKUS
+good_job=HEA TÖÖ!

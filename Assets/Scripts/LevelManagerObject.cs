@@ -13,11 +13,9 @@ public class LevelManagerObject : MonoBehaviour
 	[SerializeField]
 	public GameObject[] lvlButtons;
 
-	public int givenStars;
-
 	public int tries = 0;
 
-	public void finishLevel()
+	public void finishLevel(int givenStars)
 	{
 		Debug.Log("Correct answer! Level finished");
 
@@ -31,17 +29,4 @@ public class LevelManagerObject : MonoBehaviour
 		levelCanvas.SetActive(true);
 	}
 
-	public void finishGame()
-	{
-		if (tries > 1)
-		{
-			StartCoroutine(CompleteLevel());
-		}
-	}
-
-	IEnumerator CompleteLevel()
-	{
-		yield return new WaitForSeconds(3.0f);
-		finishLevel();
-	}
 }

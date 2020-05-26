@@ -1,0 +1,50 @@
+play=Play
+info=Info
+back=Back
+about_title=OOP Grouping game
+about_text_1=This is a serious game for Object orientated programming.
+about_text_2=In game, you have to help arrange the schoolday with grouping the right OOP objects under the right OOP classes.
+about_text_3=Serious game was developed during bachelor's thesis by Kurmo Andres Rootsi.
+level_title=Levels
+create_object=CREATE
+show_class=CLASS INFO
+empty_spot=EMPTY SPOT
+ready=READY
+menu=MENU
+edasi=NEXT
+level_1_title=OOP Class and object
+level_1_info_1=Object orientated programming is designed around objects. You can create objects if you have the OOP class for it, which is a structure for the object. In this game we have OOP objects and classes. For example school "material" class is a strucutural plan to create "material" objects and objects dont have to exist. If we create an object, then we will have an actual object of school "material" and we can define what subject it is for or how long it is.
+level_1_info_2=Drag and drop OOP classes to empty spots, after that group the OOP objects into their right class spots. Create missing objects yourself.
+
+level_2_title=OOP child and parent class inheritance
+level_2_info_1=Regular class can also have a parent class, then the child class will inherit the parent class properties. For example "Teacher" child class can have "Human" parent class, which will add the parent class properties like "name", "gender" and "age". You can also add "Human" parentclass to "Student" class. Child classes with parent classes are displayed as "child : parent";
+level_2_info_2=Group OOP classes and objects. Add new parent class "Human" to the required child class and create missing objects.
+
+level_3_title=OOP properties
+level_3_info_1=Classes can also contain properties. For example propertie for school "material" is page numbers. We dont have to know the page numbers for class, but when we create the object, then we have to set the page numbers property.
+level_3_info_2=We have added some parameters to the schoolyard, study the OOP classes structures by clicking "Class info" on the class menu, drag and drop the parameters to the right classes menu.
+
+intro_title=There is a mess in the schoolyard.
+intro_sisu=Students, teachers, classrooms and school materials have been thrown around the schoolyard. They all have their OOP Class and object. Class is a structural plan for you to create objects from it. Each level has required number of items needed to continue the schoolday. Drag and drop the OOP classes to empty spots and group objects to the right classes. You can also create objects but remember, you can only create two objects for each class.Group the OOP objects to the correct classes. Schoolbell will ring in two minutes. You can bring this guide back up by clicking "i" near the timer.
+intro_0=Human parent class
+intro_1=Classroom class and object
+intro_2=School material class and object
+intro_3=Student class and object
+intro_4=Teacher class and object
+
+for_school=For schoolday you need
+student=Student
+student_human=Student : Human
+teacher=Teacher
+teacher_human=Teacher : Human
+classroom=Classroom
+material=Material
+object=OBJECT
+CLASS=CLASS
+parent=PARENT
+wall_color=WALL COLOR
+parameeter=PARAMETER
+sinine=BLUE
+pages=PAGES
+material_length=LENGTH
+good_job=GOOD JOB!
