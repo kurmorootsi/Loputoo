@@ -7,7 +7,7 @@ Eesmärk on luua OOP kontseptsioone õpetav tõsimängu prototüüp. Rakenduse s
 # Kasutatud tehnoloogiad
 Kasutatud tehnoloogiad:\
 Unity game endine\
-Microsoft Visual Studio\
+Microsoft Visual Studio
 
 # Kasutamine
 Rakenduse kasutamiseks on soovitav kasutada viimase versiooni Chrome, Mozilla Firefox või Safari veebibrauserit, prototüüpi on võimalik kasutada järgneval aadressil: 
