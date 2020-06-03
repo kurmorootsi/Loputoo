@@ -5,9 +5,9 @@ Projekt on loodud Tallinna Ülikooli Digitehnoloogiate instituudi bakalaureuset�
 Eesmärk on luua OOP kontseptsioone õpetav tõsimängu prototüüp. Rakenduse sihtgrupp on 1.-3. klass ning prototüübis leidub 3 eri levelit, milles iga level tutuvustab uut OOP kontseptsiooni.
 
 # Kasutatud tehnoloogiad
-Kasutatud tehnoloogiad:
-Unity game endine
-Microsoft Visual Studio
+Kasutatud tehnoloogiad:\
+Unity game endine\
+Microsoft Visual Studio\
 
 # Kasutamine
 Rakenduse kasutamiseks on soovitav kasutada viimase versiooni Chrome, Mozilla Firefox või Safari veebibrauserit, prototüüpi on võimalik kasutada järgneval aadressil: 
