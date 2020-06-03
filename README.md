@@ -6,7 +6,7 @@ Eesmärk on luua OOP kontseptsioone õpetav tõsimängu prototüüp. Rakenduse s
 
 # Kasutatud tehnoloogiad
 Kasutatud tehnoloogiad:\
-Unity game endine\
+Unity game engine\
 Microsoft Visual Studio
 
 # Kasutamine
